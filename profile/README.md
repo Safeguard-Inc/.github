@@ -9,12 +9,30 @@ and that is where compliance lives.
 
 [Website & live demo](https://safeguard-docs.vercel.app) ·
 [Documentation](https://safeguard-docs.vercel.app/docs/architecture) ·
+[Pitch video](https://safeguard-docs.vercel.app/assets/video/safeguard-pitch.mp4) ·
 [Live contracts](#live-on-stellar-testnet) ·
 [Contributing](#where-to-start)
 
 </div>
 
 ---
+
+## Watch the pitch
+
+[![Five-minute Safeguard pitch: the problem, the architecture, the live decision engine and the contracts running on Testnet](https://safeguard-docs.vercel.app/assets/video/safeguard-pitch-poster.jpg)](https://safeguard-docs.vercel.app/assets/video/safeguard-pitch.mp4)
+
+Five minutes, end to end: why confidential transfers need a decision rather
+than a report, how the three layers divide that work, the policy engine driven
+live in the browser, and the contracts this organisation has deployed to
+Stellar Testnet — with the real contract ids, the read-only deployment
+verification and the measured cost of an operation.
+
+The video is **built from the documentation repository rather than edited by
+hand** — slides, live captures, voice-over and edit are all produced by
+[`video/`](https://github.com/Safeguard-Inc/safeguard-docs/tree/main/video), so
+it cannot drift away from what the project does. Captions are published as a
+WebVTT track and the claims on screen are each backed by a command recorded in
+[`video/README.md`](https://github.com/Safeguard-Inc/safeguard-docs/blob/main/video/README.md#where-the-numbers-in-scene-9-come-from).
 
 ## The problem
 
