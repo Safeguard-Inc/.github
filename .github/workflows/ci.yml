@@ -1,0 +1,68 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  # The organization page is the one artifact that goes stale on its own: a new
+  # repository becomes public and nothing in the repository that documents it
+  # changes. A weekly run turns that into a failure before a visitor finds it.
+  schedule:
+    - cron: "17 6 * * 1"
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  profile:
+    name: profile links · organization coverage · published video
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      # No toolchain actions: this job needs only the Python 3 the image already
+      # carries, and every action avoided is a third-party repository that no
+      # longer sits in the job's supply chain. The version is asserted, so a
+      # runner image change is a loud failure rather than a silent difference.
+      - name: Assert the runner toolchain is new enough
+        run: |
+          set -euo pipefail
+          python3 -c "import sys; print('python ' + sys.version.split()[0]); sys.exit(0 if sys.version_info >= (3, 10) else 1)"
+
+      # GITHUB_TOKEN is what lets the coverage check read the organization's
+      # public repository list; without it that one check reports itself as
+      # skipped rather than passing on an empty list.
+      - name: Organization profile integrity
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/check-profile.py
+
+      - name: Workflow files are valid YAML
+        run: |
+          python3 - <<'PY'
+          import pathlib, sys
+
+          try:
+              import yaml
+          except ImportError:
+              print("PyYAML is unavailable on this image; skipping the YAML parse")
+              sys.exit(0)
+
+          problems = []
+          for workflow in sorted(pathlib.Path(".github/workflows").glob("*.yml")):
+              try:
+                  yaml.safe_load(workflow.read_text(encoding="utf-8"))
+              except yaml.YAMLError as error:
+                  problems.append(f"{workflow}: {error}")
+          if problems:
+              for problem in problems:
+                  print(f"FAIL {problem}", file=sys.stderr)
+              sys.exit(1)
+          print("all workflow files parse as YAML")
+          PY
