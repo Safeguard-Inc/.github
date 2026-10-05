@@ -15,9 +15,9 @@ Safeguard provides an on-chain firewall for Web3 payments, payroll disbursals, a
 
 ---
 
-## 🏛️ The 3-Tier Architecture
+## 🏛️ The 4-Tier Architecture
 
-Safeguard is structured across three dedicated, production-ready repositories covering smart contracts, backend integration, and the frontend operator interface:
+Safeguard is structured across four dedicated, production-ready repositories covering smart contracts, backend integration, frontend operator console, and developer documentation:
 
 ```mermaid
 graph TD
@@ -26,21 +26,27 @@ graph TD
     Contract -->|Approve| Pay[Direct SAC Settlement]
     Contract -->|Flag| Escrow[On-Chain Escrow Vault]
     Contract -->|Block| Revert[Fail-Closed Revert #11/#12]
+    Docs[safeguard-docs\nInteractive Engine Demo + Video] -.->|Documents & Verifies| Contract
 ```
 
-| Repository | Role | Stack | Link |
+| Repository | Role | Tech Stack | Repository Link |
 | :--- | :--- | :--- | :--- |
-| **`safeguard-contracts`** | **Smart Contracts** | Rust, Soroban SDK | [Repo Link](https://github.com/Safeguard-Inc/safeguard-contracts) |
-| **`safeguard-backend`** | **Integration & SDK** | TypeScript, Node.js, Stellar SDK | [Repo Link](https://github.com/Safeguard-Inc/safeguard-backend) |
-| **`safeguard-dashboard`** | **Frontend Console** | Next.js 14, Tailwind, Freighter | [Repo Link](https://github.com/Safeguard-Inc/safeguard-dashboard) |
+| **`safeguard-contracts`** | **Smart Contracts** | Rust, Soroban SDK, Protocol 22+ | [Safeguard-Inc/safeguard-contracts](https://github.com/Safeguard-Inc/safeguard-contracts) |
+| **`safeguard-backend`** | **Integration & SDK** | TypeScript, Node.js, Stellar SDK | [Safeguard-Inc/safeguard-backend](https://github.com/Safeguard-Inc/safeguard-backend) |
+| **`safeguard-dashboard`** | **Frontend Console** | Next.js 14, Tailwind, Freighter | [Safeguard-Inc/safeguard-dashboard](https://github.com/Safeguard-Inc/safeguard-dashboard) |
+| **`safeguard-docs`** | **Docs Hub & Demo** | Static HTML5/ESM, Pitch Video | [Safeguard-Inc/safeguard-docs](https://github.com/Safeguard-Inc/safeguard-docs) |
 
 ---
 
-## 🌐 Live Deployments
+## 🌐 Live Deployments & Pitch Video
 
 * **Live Web Console & Checkout Demo:** [https://safeguard-dashboard-mocha.vercel.app](https://safeguard-dashboard-mocha.vercel.app)
-* **Safeguard Payments Contract (Testnet):** `CBLQLJAG72M4XQRJMQHSKYIFVHQD7LNTNOQH2GRMCMBWMSLBSLTGTJC7`
-* **Safeguard Policy Engine (Testnet):** `CDVME6OPYZO6RAIWRFKLI3ACZHPNZK7GDBIX7YSIER3QLA2SO47QX5IB`
+* **Documentation & Interactive Demo:** [https://safeguard-docs.vercel.app](https://safeguard-docs.vercel.app)
+* **Pitch Video (5 Minutes, Full Stack):** [https://safeguard-docs.vercel.app/assets/video/safeguard-pitch.mp4](https://safeguard-docs.vercel.app/assets/video/safeguard-pitch.mp4)
+* **Safeguard Payments Contract (Testnet):** `CBH4XG6K5XJHY3QMVUP7LGB4BFFG4C3XQ5Z64K7Z5OC66UDF4RAGRXYZ`
+* **Safeguard Policy Engine (Testnet):** `CAQI3YI244YV7QGZ5VODUUGKFX6C4XNDQ2Y64K7Z5OC66UDF4RAGRP4V`
+* **Native Testnet SAC Token:** `CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC`
+
 
 ---
 
