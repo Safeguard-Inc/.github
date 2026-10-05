@@ -40,12 +40,13 @@ graph TD
 
 ## 🌐 Live Deployments & Pitch Video
 
+[![Five-minute Safeguard pitch: the problem, the architecture, the live decision engine and the contracts running on Testnet](https://safeguard-docs.vercel.app/assets/video/safeguard-pitch-poster.jpg)](https://safeguard-docs.vercel.app/assets/video/safeguard-pitch.mp4)
+
 * **Live Web Console & Checkout Demo:** [https://safeguard-dashboard-mocha.vercel.app](https://safeguard-dashboard-mocha.vercel.app)
 * **Documentation & Interactive Demo:** [https://safeguard-docs.vercel.app](https://safeguard-docs.vercel.app)
 * **Pitch Video (5 Minutes, Full Stack):** [https://safeguard-docs.vercel.app/assets/video/safeguard-pitch.mp4](https://safeguard-docs.vercel.app/assets/video/safeguard-pitch.mp4)
-* **Safeguard Payments Contract (Testnet):** `CBH4XG6K5XJHY3QMVUP7LGB4BFFG4C3XQ5Z64K7Z5OC66UDF4RAGRXYZ`
-* **Safeguard Policy Engine (Testnet):** `CAQI3YI244YV7QGZ5VODUUGKFX6C4XNDQ2Y64K7Z5OC66UDF4RAGRP4V`
-* **Native Testnet SAC Token:** `CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC`
+* **Safeguard Payments Contract (Testnet):** `CBLQLJAG72M4XQRJMQHSKYIFVHQD7LNTNOQH2GRMCMBWMSLBSLTGTJC7`
+* **Safeguard Policy Engine (Testnet):** `CDVME6OPYZO6RAIWRFKLI3ACZHPNZK7GDBIX7YSIER3QLA2SO47QX5IB`
 
 
 ---
