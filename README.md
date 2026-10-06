@@ -15,11 +15,11 @@ Organization-level profile and shared community health files for
 
 ## Presentation
 
-[![Five-minute Safeguard pitch: the problem, the architecture, the live decision engine and the contracts running on Testnet](https://safeguard-docs.vercel.app/assets/video/safeguard-pitch-poster.jpg)](https://safeguard-docs.vercel.app/assets/video/safeguard-pitch.mp4)
+[![Safeguard pitch video (<2 min): the problem, the architecture, the live decision engine and the contracts running on Testnet](https://safeguard-docs.vercel.app/assets/video/safeguard-pitch-poster.jpg)](https://safeguard-docs.vercel.app/assets/video/safeguard-pitch.mp4)
 
-[![Pitch video](https://img.shields.io/badge/pitch_video-5_minutes-4ade9b)](https://safeguard-docs.vercel.app/assets/video/safeguard-pitch.mp4)
+[![Pitch video](https://img.shields.io/badge/pitch_video-%3C2_min-4ade9b)](https://safeguard-docs.vercel.app/assets/video/safeguard-pitch.mp4)
 
-Five minutes on the problem, the architecture, the engine running live and the
+Under two minutes (97s) on the problem, the architecture, the engine running live and the
 contracts deployed to Stellar Testnet. The video is generated from
 [`safeguard-docs`](https://github.com/Safeguard-Inc/safeguard-docs/tree/main/video)
 rather than hand-edited, so the same pipeline that produced it re-checks the

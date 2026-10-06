@@ -12,7 +12,7 @@ goes into on-chain escrow for review, or is rejected before any tokens move.
 
 </div>
 
-[![Five-minute Safeguard pitch](https://safeguard-docs.vercel.app/assets/video/safeguard-pitch-poster.jpg)](https://safeguard-docs.vercel.app/assets/video/safeguard-pitch.mp4)
+[![Safeguard pitch video (<2 min)](https://safeguard-docs.vercel.app/assets/video/safeguard-pitch-poster.jpg)](https://safeguard-docs.vercel.app/assets/video/safeguard-pitch.mp4)
 
 ## Why
 
