@@ -44,6 +44,7 @@ flowchart LR
 | [**safeguard-backend**](https://github.com/Safeguard-Inc/safeguard-backend) | TypeScript SDK and REST API | TypeScript, Express |
 | [**safeguard-dashboard**](https://github.com/Safeguard-Inc/safeguard-dashboard) | Operator console | Next.js 14, Tailwind |
 | [**safeguard-docs**](https://github.com/Safeguard-Inc/safeguard-docs) | Docs, engine demo, pitch video | Static HTML/ESM |
+| [**.github**](https://github.com/Safeguard-Inc/.github) | Organization profile and community health files | Markdown |
 
 ## Live on Stellar Testnet
 

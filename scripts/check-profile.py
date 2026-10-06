@@ -144,6 +144,8 @@ def check_repository_coverage() -> list[str]:
     profile = PROFILE.read_text(encoding="utf-8")
     problems = []
     for repository in sorted(r["name"] for r in repositories):
+        if repository == ".github":
+            continue
         if repository not in profile:
             problems.append(
                 f"'{repository}' is public in the organization but is not mentioned in "
