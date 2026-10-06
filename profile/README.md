@@ -59,15 +59,16 @@ flowchart LR
 [Docs](https://safeguard-docs.vercel.app) ·
 [Pitch video](https://safeguard-docs.vercel.app/assets/video/safeguard-pitch.mp4)
 
-## Contribute: Stellar Drips Wave
+## Contributing
 
-Safeguard takes part in the **Stellar Drips Wave**. Each repository's README
-has a roadmap, and every roadmap item becomes a scoped issue with acceptance
-criteria and a complexity label:
+We welcome community contributions across the entire Safeguard stack. Each repository
+maintains an active backlog of scoped issues with clear acceptance criteria and complexity ratings:
 
 - [Contract issues](https://github.com/Safeguard-Inc/safeguard-contracts/issues) (Rust / Soroban)
 - [Backend & SDK issues](https://github.com/Safeguard-Inc/safeguard-backend/issues) (TypeScript)
 - [Dashboard issues](https://github.com/Safeguard-Inc/safeguard-dashboard/issues) (React / Next.js)
-- [Docs issues](https://github.com/Safeguard-Inc/safeguard-docs/issues)
+- [Docs issues](https://github.com/Safeguard-Inc/safeguard-docs/issues) (Documentation & verification)
+
+To pick up an issue, comment on it to claim it, open a pull request against `main`, and ensure all CI checks pass.
 
 All repositories are open source under Apache-2.0.
